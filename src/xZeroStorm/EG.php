@@ -599,9 +599,9 @@ class ESGameSender extends Task {
                                 }
                             }
                             
-                            if ($lobbytimer >= 5 && $lobbytimer <= 10) {
+                            if ($lobbytimer >= 5 && $lobbytimer <= 15) {
                                 foreach ($players as $p) {
-                                    $p->addTitle("", TextFormat::GREEN . $lobbytimer);
+                                    $p->addTitle("", TextFormat::YELLOW . $lobbytimer);
                                     $this->plugin->fillChests($levelArena);
                                 }
                             }
@@ -625,6 +625,8 @@ class ESGameSender extends Task {
                                     $p->getInventory()->clearAll();
                                     $p->getArmorInventory()->clearAll();
                                     $p->removeAllEffects();
+                                    $p->getInventory()->setSize(32);
+                                    $p->getInventory()->setItem(8, Item::get(345)->setCustomName("§eNavigator"));
 
                                     $this->plugin->fillChests($levelArena);
                                 }
@@ -701,7 +703,7 @@ class ESGameSender extends Task {
 
                                 foreach ($players as $p) {
 
-                                    $p->addTitle("", TextFormat::RED . $endtimer);
+                                    $p->addTitle("", TextFormat::YELLOW . $endtimer);
                                 }
                             }
                             if ($endtimer == 5 ||
