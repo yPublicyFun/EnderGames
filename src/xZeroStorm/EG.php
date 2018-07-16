@@ -445,7 +445,7 @@ class EG extends PluginBase implements Listener {
             $sender->transfer("", "19132");
         }
         
-        if ($cmd->getName() == "endergames") {
+        if ($cmd->getName() == "eg") {
             if (!empty($args[0])) {
                 if ($args[0] == "addarena" && $sender->isOP()) {
                     if (!empty($args[1]) && !empty($args[2])) {
