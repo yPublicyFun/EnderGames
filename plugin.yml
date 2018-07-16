@@ -4,9 +4,9 @@ api: 4.0.0
 main: xZeroStorm\EG
 author: xZeroStorm
 commands:
-    endergames:
+    eg:
         description: "EnderGames Commands"
-        aliases: [es, endergames, eg]
+        aliases: [es, endergames]
     spawn:
         description: "Teleport zum Spawn"
         aliases: [leave, spawn]
