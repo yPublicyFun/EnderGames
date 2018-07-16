@@ -1,0 +1,15 @@
+name: EnderGames
+version: 1.0
+api: 4.0.0
+main: xZeroStorm\EG
+author: xZeroStorm
+commands:
+    endergames:
+        description: "EnderGames Commands"
+        aliases: [es, endergames, eg]
+    spawn:
+        description: "Teleport zum Spawn"
+        aliases: [leave, spawn]
+    lobby:
+        description: "Transferiert dich zur Hub"
+        aliases: [hub]
