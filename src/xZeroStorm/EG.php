@@ -595,7 +595,7 @@ class ESGameSender extends Task {
                                     $lobbytimer == 11           
                                     ) {
                                 foreach ($players as $p) {
-                                    $p->addTitle("", TextFormat::GREEN . "EnderGames startet in:" $lobbytimer);
+                                    $p->addTitle("", TextFormat::GREEN . $lobbytimer);
                                 }
                             }
                             
